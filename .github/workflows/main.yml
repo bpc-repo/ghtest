@@ -14,5 +14,5 @@ jobs:
         server: brokenpony.club
         username: brokehfyks_4
         password: ${{ secrets.password }}
-        protocol: ftps
+        protocol: ftp
         port: 21 # todo replace with your web hosts ftps port
