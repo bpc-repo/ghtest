@@ -6,7 +6,7 @@ jobs:
     name: deploy
     steps:
       - name: Checkout
-        uses: webfactory/ssh-agent@v0.5.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
