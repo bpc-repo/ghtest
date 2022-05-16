@@ -11,7 +11,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: 'brokehfyks_4'
-          server: '196.40.97.175'
+          server: 'brokenpony.club'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './static/*'
           remote_path: '/usr/www/users/brokehfyks/dev.brokenpony.club/github-test'
