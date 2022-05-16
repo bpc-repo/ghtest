@@ -25,7 +25,7 @@ jobs:
         with:
           username: brokehfyks_4
           server: brokenpony.club
-          port: 22 # default is 2
+          port: 22 # default is 
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
  
           
