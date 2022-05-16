@@ -10,10 +10,10 @@ jobs:
       - name: deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
-          username: 'brokehfyks_4'
-          password: ${{ secrets.FTP_PASSWORD }}
+          
           server: 'brokenpony.club'
+          username: 'brokehfyks_4'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: './static/*'
           remote_path: '/usr/www/users/brokehfyks/dev.brokenpony.club/github-test'
-          args: '-o ConnectTimeout=5'
+          args: '-o ConnectTimeout=10'
