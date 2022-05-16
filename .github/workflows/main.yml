@@ -12,7 +12,7 @@ jobs:
         with:
           username: 'brokehfyks_4'
           server: '196.40.97.175'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
           local_path: './static/*'
           remote_path: '/usr/www/users/brokehfyks/dev.brokenpony.club/github-test'
           args: '-o ConnectTimeout=5'
