@@ -35,4 +35,4 @@ jobs:
           remote_path: /usr/www/users/brokehfyks/dev.brokenpony.club/github-test/
           
           # sftp args
-          args: '-o ConnectTimeout=5'
+          args: '-o ConnectTimeout=20'
