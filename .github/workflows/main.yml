@@ -1,0 +1,23 @@
+on: [push]
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: webfactory/ssh-agent@v0.5.4
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          
+          server: 'brokenpony.club'
+          username: 'brokehfyks_4'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: './static/*'
+          remote_path: '/usr/www/users/brokehfyks/dev.brokenpony.club/github-test'
+          args: '-o ConnectTimeout=10'
+
+
+        - name: webfactory/ssh-agent
+       
