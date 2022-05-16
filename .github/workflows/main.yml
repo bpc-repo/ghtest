@@ -1,18 +1,30 @@
+
+ 
 on: push
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
+  name: 🎉 Deploy
+  runs-on: ubuntu-latest
+  steps:
+    
+  - name: 🚚 Get latest code
+    uses: actions/checkout@v2
+          
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
         server: brokenpony.club
         username: brokehfyks_4
         password: ${{ secrets.password }}
         protocol: ftp
         port: 21 # todo replace with your web hosts ftps port
+ 
+          
+          # will put all file under this path
+          local_path: ./* # default is ./*
+          # files will copy to under remote_path
+          remote_path: /usr/www/users/brokehfyks/dev.brokenpony.club/github-test
+          
+        
