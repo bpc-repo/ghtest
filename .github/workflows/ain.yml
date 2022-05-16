@@ -23,10 +23,10 @@ jobs:
       - name: SF Depl
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username: brokehfyks_4
-          server: brokenpony.club
-          port: 21 # default is 22
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+          ftp-server: brokenpony.club
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
  
           
           # will put all file under this path
