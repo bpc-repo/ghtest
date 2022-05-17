@@ -12,10 +12,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: brokenpony.club
-        username: brokehfyks_4
+        username: brokehfyks_6
         password: ${{ secrets.password }}
         protocol: ftp
         port: 21 # todo replace with your web hosts ftps port
 
         # files will copy to under remote_path
-        server-dir: /usr/www/users/brokehfyks/dev.brokenpony.club/github-test/
+      
