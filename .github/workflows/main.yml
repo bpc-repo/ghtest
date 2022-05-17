@@ -17,5 +17,5 @@ jobs:
         protocol: ftp
         port: 21 # todo replace with your web hosts ftps port
 
-        # files will copy to under remote_path
+      
       
