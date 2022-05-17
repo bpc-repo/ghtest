@@ -18,4 +18,4 @@ jobs:
         port: 21 # todo replace with your web hosts ftps port
 
         # files will copy to under remote_path
-        server-dir: /usr/www/users/brokehfyks/dev.brokenpony.club/github-test
+        server-dir: /usr/www/users/brokehfyks/dev.brokenpony.club/github-test/
