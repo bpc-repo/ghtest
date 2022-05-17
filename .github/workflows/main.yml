@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 📂 Syncing files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: ./.github/workflows/called-workflow.yml
       with:
         server: brokenpony.club
         username: brokehfyks_6
